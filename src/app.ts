@@ -3,7 +3,7 @@ import { healthRouter } from "./routes/health";
 
 const app = express();
 
-app.use(express.json());
+app.use(express.jsonp());
 
 app.use("/health", healthRouter);
 
